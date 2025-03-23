@@ -1,0 +1,58 @@
+# Project Workflow and Documentation Preferences
+
+## Requirements Gathering
+- Break down requirements into logical, smaller files
+- Create clear documentation structure with central index
+- Keep requirements organized by domain/feature
+- Document all technical decisions
+- Create clear references between related requirements
+
+## Documentation Structure
+- Maintain a central overview document
+- Break documentation into domain-specific files
+- Use cross-references between documents
+- Keep documentation close to related code
+- Update documentation continuously
+
+## Project Organization
+- Maintain TODOS.md in project root
+  - Use emoji for status tracking
+  - Break down into clear phases
+  - Include time estimates
+  - Reference requirement docs
+  - Track progress clearly
+
+- Maintain HANDOFF.MD in project root
+  - Document current status
+  - List last completed tasks
+  - Specify next steps
+  - Note open questions
+  - Include resource links
+
+## Implementation Approach
+- Break features into smaller, manageable tasks
+- Implement core functionality first
+- Save nice-to-have features for later phases
+- Focus on one domain at a time
+- Test thoroughly before moving on
+
+## Version 1 Philosophy
+- Keep initial scope focused and manageable
+- Implement core features thoroughly
+- Plan for future enhancements
+- Don't over-engineer early
+- Build solid foundation for future features
+
+## Future Planning
+- Document future enhancements clearly
+- Keep roadmap updated
+- Note architectural decisions that affect future work
+- Plan for scalability without premature optimization
+- Consider future maintenance in current decisions
+
+## Testing and Quality
+- Write tests for all major functionality
+- Implement monitoring from the start
+- Use proper logging
+- Document testing requirements
+- Focus on reliability over features 

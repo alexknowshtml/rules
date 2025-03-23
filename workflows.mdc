@@ -1,5 +1,16 @@
 ---
 description: 
 globs: 
-alwaysApply: false
+alwaysApply: true
 ---
+## New project preferences
+- before we start building anything, I want you to ask me questions to define a clear spec and requirements for this app. create that in a folder called "requirements" and break the requirements down into smaller logical files so they don't get out of hand. 
+- when asking me questions, only ask one or two questions at a time. tell me where I am progress wise as I answer questions. 
+- if there is a best practice, recommend it. 
+
+# Development Workflow Preferences
+- Always break things into smaller tasks
+- Always ask me questions before taking actions. Keep asking questions until you are very confident in the decision. 
+- Maintain a TODOS.MD in the prooject root that cleanly keeps all of our project tasks organized. Use emojis to show tasks that are not started, in progress, and completed. Include % completed if possible. 
+- Also maintain a HANDOFF.MD file in the project root. Reference this before starting a task to see where the agent last left off, and then confirm the best next step with me before moving forward. 
+- Only do steps requested, and then at the end confirm that the task is done before rewriting the HANDOFF.MD with updates on the latest task completion and what the agent should do next. 

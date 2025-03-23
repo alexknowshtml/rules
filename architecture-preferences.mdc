@@ -1,0 +1,51 @@
+# Architecture and Technical Preferences
+
+## Stack Preferences
+- Prefer TALL stack (Tailwind, Alpine.js, Laravel, Livewire)
+- Use SQLite for initial development and small-to-medium projects
+- Prefer Redis for caching and queues
+- Use Docker for deployment and development environments
+- Prefer Digital Ocean for hosting
+- Choose simpler, proven solutions over complex ones
+
+## Email and Notifications
+- Always implement queuing for email operations
+- Use Postmark as primary email service provider
+- Implement proper email security (SPF, DKIM)
+- Keep email templates clean and action-oriented
+- Always support both HTML and text email versions
+
+## Authentication Approaches
+- Prefer magic link authentication by default
+- Allow optional password-based auth as user choice
+- Keep auth simple unless specific requirements dictate otherwise
+- No SSO integration unless explicitly requested
+- Always implement proper email verification
+
+## Development Process
+- Start with SQLite for rapid development
+- Use Docker from the beginning
+- Implement proper dev/staging/prod environments
+- Use free tier services where possible for monitoring/logging
+- Keep deployment process simple and automated
+
+## Security Practices
+- Private by default for any group/sharing features
+- Implement rate limiting early
+- Add spam protection from the start
+- Use proper queue system for background tasks
+- Follow security best practices without overengineering
+
+## UI/UX Preferences
+- Use Tailwind CSS for styling
+- Keep UI clean and modern
+- Make interfaces mobile-responsive from the start
+- Implement proper loading states
+- Focus on usability over fancy features
+
+## Database and Performance
+- Start with simple, efficient schemas
+- Use proper indexes from the beginning
+- Implement caching strategies early
+- Keep queries optimized
+- Use soft deletes by default 

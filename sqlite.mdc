@@ -3,7 +3,6 @@ description: This rule explains SQLite database design patterns and performance 
 globs: **/*.sql
 alwaysApply: false
 ---
-
 # SQLite rules
 
 - Use appropriate data types for columns (INTEGER, TEXT, REAL, BLOB, NULL)
