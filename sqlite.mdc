@@ -1,6 +1,6 @@
 ---
 description: This rule explains SQLite database design patterns and performance considerations.
-globs: *.sql
+globs: **/*.sql
 alwaysApply: false
 ---
 

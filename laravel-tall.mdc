@@ -1,0 +1,20 @@
+---
+description: This rule explains how to build Livewire components and use the TALL stack effectively.
+globs: **/*.blade.php
+alwaysApply: false
+---
+
+# Laravel TALL rules
+
+- Livewire components namespace is now App\Livewire and not App\Http\Livewire
+- To dispatch events we always use `$this->dispatch()`, not `$this->emit` or `$this->dispatchBrowserEvent`
+- The layout path is now components.layouts.app instead of layouts.app
+- `wire:model` is deferred by default so to achieve same behavior as before we need to use `wire:model.live`
+- The same applies for `@entangle`
+- When updating a Livewire blade component everything must be within a single <div> tag, if you need to add custom CSS, put that in [app.css](mdc:resources/css/app.css)
+- Any time you have a loop in Blade templates using something like @foreach, you need to add wire:key to the opening tag of the first element within the loop. The same applies to Livewire components within a loop.
+- Livewire includes its own bundle of Alpine under the hood we do not need to manually include it in the resources/js/app.js or with a script tag in the Blade View.
+- Use #[On('event-name')] attribute for event listeners instead of protected $listeners
+- Use wire:dirty to style elements when the component is in a dirty/unsaved state
+- Use wire:loading for loading states during actions
+- Use wire:confirm for confirmation dialogs
