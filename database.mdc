@@ -1,0 +1,7 @@
+---
+description: 
+globs: 
+alwaysApply: true
+---
+- when developing, always use the sqlite project database found at data/echo-dev.db
+- reference the rules in the sqlite.mdc file too
