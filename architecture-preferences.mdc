@@ -6,26 +6,24 @@ alwaysApply: false
 # Architecture and Technical Preferences
 
 ## Stack Preferences
-- Prefer TALL stack (Tailwind, Alpine.js, Laravel, Livewire)
-- Use SQLite for initial development and small-to-medium projects
-- Prefer Redis for caching and queues
-- Use Docker for deployment and development environments
-- Prefer Digital Ocean for hosting
+- Prefer modern JavaScript frameworks like Next.js for frontend development
+- Use PostgreSQL for database management and queues
+- Use Docker for deployment on Digital Ocean's app platform
+- Use Digital Ocean's file storage
 - Choose simpler, proven solutions over complex ones
 
 ## Email and Notifications
-- Always implement queuing for email operations
-- Use Postmark as primary email service provider
+- Implement queuing for email operations
+- Use Postmark as the email service provider
 - Implement proper email security (SPF, DKIM)
 - Keep email templates clean and action-oriented
-- Always support both HTML and text email versions
+- Support both HTML and text email versions
 
 ## Authentication Approaches
-- Prefer magic link authentication by default
+- Use magic link for user authentication
 - Allow optional password-based auth as user choice
 - Keep auth simple unless specific requirements dictate otherwise
-- No SSO integration unless explicitly requested
-- Always implement proper email verification
+- Implement proper email verification
 
 ## Development Process
 - Start with SQLite for rapid development

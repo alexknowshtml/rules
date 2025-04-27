@@ -1,0 +1,32 @@
+---
+description: 
+globs: 
+alwaysApply: false
+---
+# PostgreSQL Best Practices
+
+## Data Types
+- Use appropriate data types for columns (e.g., INTEGER, TEXT, BOOLEAN, JSONB for JSON data).
+- Prefer UUIDs for primary keys over serial integers for better scalability.
+
+## Indexing
+- Create indexes on columns that are frequently used in WHERE clauses.
+- Use partial indexes for queries that filter on specific conditions.
+- Consider using GIN indexes for JSONB columns.
+
+## Performance
+- Use connection pooling to manage database connections efficiently.
+- Regularly analyze and vacuum the database to maintain performance.
+- Use EXPLAIN ANALYZE to understand query performance and optimize accordingly.
+
+## Backup and Restore
+- Regularly back up the database using pg_dump or other backup tools.
+- Test restore procedures to ensure backups are reliable.
+
+## Configuration
+- Enable logging for slow queries to identify performance bottlenecks.
+- Use appropriate settings for work_mem, maintenance_work_mem, and shared_buffers based on available resources.
+
+## Extensions
+- Consider using extensions like PostGIS for geospatial data or pg_trgm for text search.
+- Enable the pg_stat_statements extension for tracking query performance.
